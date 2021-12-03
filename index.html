@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>Университет "Дубна"</h1>
+        <p><b>Есть вопросы?</b></p>
+        <form action="">
+        <p>
+            Как Вам удобно получатить ответ:
+        </p>
+            <input type="radio" name="answer" value="по почте" checked='true'/>по почте<br />
+            <input type="radio" name="answer" value="по телефону" />по телефону<br />
+            <input type="radio" name="answer" value="не нужно отвечать" />не нужно отвечать
+        </p>
+        
+        <p>
+            Укажите тему вопроса
+        </p>
+        <select name="theme_of_question" id="theme_of_question">
+            <option value="work" selected>работа</option>
+            <option value="education">учёба</option>
+            <option value="another">другое</option>
+        </select>
+
+        <p>
+            И ещё один вопрос?
+        </p>
+        <p>
+            <input class="checkbox" type="checkbox" id="first" value="может так">
+            <label for="first"> может так</label><br>
+            <input class="checkbox" type="checkbox" id="second"  value="или не так">
+            <label for="second">или не так</label><br>
+            <input class="checkbox" type="checkbox" id="third" value="иначе">
+            <label for="third"> иначе </label>
+        </p>
+
+        <p>
+            Ваше имя
+            <input type="text" id="name" name="name" size="10"><br>
+            адрес почты
+            <input type="text" id="email" name="email" size="10"><br>
+            номер телефона
+            <input type="text" id="humber_of_phone" name="humber_of_phone" size="10">
+        </p>
+
+        <p>
+            Ваш вопрос: <br>
+            <TEXTAREA NAME="Letter" id="question" ROWS=3 COLS=35>
+                </TEXTAREA>
+        </p>
+        
+        <p><input type="submit" value="отправить вопрос" onclick="alertAnswers()"/></p>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
